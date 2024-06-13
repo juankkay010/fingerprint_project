@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { connectDb } from '@/connectdb';
+import { connectDb } from '/connectdb';
 
 export const GET = async (req) => {
   try {

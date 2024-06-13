@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "moment": "^2.30.1",
     "mongodb": "^6.7.0",
     "moongose": "^1.0.0",
     "next": "14.2.4",
@@ -16,6 +17,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/react": "18.3.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }

@@ -4,6 +4,7 @@ import { connectDb } from '/connectdb';
 
 
 
+
 export async function GET( request,{ params }) {
   try {
     const client = await connectDb(); // Conectar a la base de datos

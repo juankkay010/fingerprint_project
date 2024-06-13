@@ -18,8 +18,8 @@ async function SearchPage({ searchParams }) {
     });
   
   const data = await results.json();
-
-  if (!results) return <div>No results...</div>;
+  
+  if (data.message === 'Usuario no encontrado') return <div>No results...</div>;
 
   return (
     <section>
@@ -34,6 +34,7 @@ async function SearchPage({ searchParams }) {
     <hr className="mb-5" />
 
     <div className="space-y-2 mt-5">
+
       {data.map((item, i) => (
         <div key={i} className="flex space-y-2 justify-between space-x-4 p-5 border rounded-lg">  
           <div className="flex flex-1 items-center">
